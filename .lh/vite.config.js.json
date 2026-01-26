@@ -1,0 +1,26 @@
+{
+    "sourceFile": "vite.config.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1769414507458,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1769414740351,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,14 +17,14 @@\n         background_color: \"#ffffff\",\n         theme_color: \"#000000\",\n         icons: [\n           {\n-            src: \"/pwa-192x192.png\",\n+            src: \"/logo.png\",\n             sizes: \"192x192\",\n             type: \"image/png\",\n           },\n           {\n-            src: \"/pwa-512x512.png\",\n+            src: \"/logo.png\",\n             sizes: \"512x512\",\n             type: \"image/png\",\n           },\n         ],\n"
+                },
+                {
+                    "date": 1769414892165,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,14 +17,14 @@\n         background_color: \"#ffffff\",\n         theme_color: \"#000000\",\n         icons: [\n           {\n-            src: \"/logo.png\",\n+            src: \"logo.png\",\n             sizes: \"192x192\",\n             type: \"image/png\",\n           },\n           {\n-            src: \"/logo.png\",\n+            src: \"logo.png\",\n             sizes: \"512x512\",\n             type: \"image/png\",\n           },\n         ],\n"
+                }
+            ],
+            "date": 1769414507458,
+            "name": "Commit-0",
+            "content": "import tailwindcss from \"@tailwindcss/vite\";\n\nimport { defineConfig } from \"vite\";\nimport react from \"@vitejs/plugin-react\";\nimport { VitePWA } from \"vite-plugin-pwa\";\n\nexport default defineConfig({\n  plugins: [\n    react(),\n    VitePWA({\n      registerType: \"autoUpdate\",\n      manifest: {\n        name: \"IJMKB Virtual Lab\",\n        short_name: \"I-V-L\",\n        start_url: \"/\",\n        display: \"standalone\",\n        background_color: \"#ffffff\",\n        theme_color: \"#000000\",\n        icons: [\n          {\n            src: \"/pwa-192x192.png\",\n            sizes: \"192x192\",\n            type: \"image/png\",\n          },\n          {\n            src: \"/pwa-512x512.png\",\n            sizes: \"512x512\",\n            type: \"image/png\",\n          },\n        ],\n      },\n    }),\n    tailwindcss(),\n  ],\n});\n"
+        }
+    ]
+}

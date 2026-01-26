@@ -1,0 +1,34 @@
+{
+    "sourceFile": "src/App.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 4,
+            "patches": [
+                {
+                    "date": 1769412815224,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1769412902727,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n   return (\n     <BrowserRouter>\n       <Routes>\n         <Route path=\"/\" element={<QuizHomepage />} />\n-        <Route path=\"/quiz\" element={<QuizApp />} />\n+        <Route path=\"/textQuiz\" element={<QuizApp />} />\n       </Routes>\n     </BrowserRouter>\n   );\n };\n"
+                },
+                {
+                    "date": 1769412943576,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,20 @@\n+import React from \"react\";\n+import QuizHomepage from \"./QuizHomepage\";\n+import QuizApp from \"./pages/TextQuiz\";\n+import imageQuiz from \"./pages/ImageQuiz\";\n+\n+import { Route, Routes, BrowserRouter } from \"react-router-dom\";\n+\n+const App = () => {\n+  return (\n+    <BrowserRouter>\n+      <Routes>\n+        <Route path=\"/\" element={<QuizHomepage />} />\n+        <Route path=\"/textQuiz\" element={<QuizApp />} />\n+        <Route path=\"/textQuiz\" element={<QuizApp />} />\n+      </Routes>\n+    </BrowserRouter>\n+  );\n+};\n+\n+export default App;\n"
+                },
+                {
+                    "date": 1769412958728,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import React from \"react\";\n import QuizHomepage from \"./QuizHomepage\";\n import QuizApp from \"./pages/TextQuiz\";\n-import imageQuiz from \"./pages/ImageQuiz\";\n+import ImageQuiz from \"./pages/ImageQuiz\";\n \n import { Route, Routes, BrowserRouter } from \"react-router-dom\";\n \n const App = () => {\n@@ -17,21 +17,4 @@\n   );\n };\n \n export default App;\n-import React from \"react\";\n-import QuizHomepage from \"./QuizHomepage\";\n-import QuizApp from \"./pages/TextQuiz\";\n-import { Route, Routes, BrowserRouter } from \"react-router-dom\";\n-\n-const App = () => {\n-  return (\n-    <BrowserRouter>\n-      <Routes>\n-        <Route path=\"/\" element={<QuizHomepage />} />\n-        <Route path=\"/textQuiz\" element={<QuizApp />} />\n-      </Routes>\n-    </BrowserRouter>\n-  );\n-};\n-\n-export default App;\n"
+                },
+                {
+                    "date": 1769412970625,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n     <BrowserRouter>\n       <Routes>\n         <Route path=\"/\" element={<QuizHomepage />} />\n         <Route path=\"/textQuiz\" element={<QuizApp />} />\n-        <Route path=\"/textQuiz\" element={<QuizApp />} />\n+        <Route path=\"/imageQuiz\" element={<ImageQuiz />} />\n       </Routes>\n     </BrowserRouter>\n   );\n };\n"
+                }
+            ],
+            "date": 1769412815224,
+            "name": "Commit-0",
+            "content": "import React from \"react\";\nimport QuizHomepage from \"./QuizHomepage\";\nimport QuizApp from \"./pages/TextQuiz\";\nimport { Route, Routes, BrowserRouter } from \"react-router-dom\";\n\nconst App = () => {\n  return (\n    <BrowserRouter>\n      <Routes>\n        <Route path=\"/\" element={<QuizHomepage />} />\n        <Route path=\"/quiz\" element={<QuizApp />} />\n      </Routes>\n    </BrowserRouter>\n  );\n};\n\nexport default App;\n"
+        }
+    ]
+}
